@@ -1,0 +1,27 @@
+let num = 1
+
+var fizz:String = "Fizz"
+var buzz:String = "Buzz"
+var fizzBuzz:String = "FizzBuzz"
+//Sayıları 1'den 100'e kadar sıralamak için "for-in" komutu kullanıyoruz.
+
+for num in 1...100 {
+//Sayı hem 3'e, hem 5'e tam bölünüyor ise "FizzBuzz" yazdırıyoruz.  
+if num %3 == 0 && num %5 == 0 {
+    print(fizzBuzz)
+  }
+
+//Sayı sadece 3'e bölünüyor ise "Fizz" yazdırıyoruz.
+else if num %3 == 0 {
+    print(fizz)
+  }
+
+//Sayı sadece 5'e bölünüyor ise "Buzz" yazdırıyoruz.
+else if num %5 == 0 {
+    print(buzz)
+  }
+else {
+  print(num)
+  }
+}
+//Commented by Glyga
